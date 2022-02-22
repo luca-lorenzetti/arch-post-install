@@ -13,14 +13,14 @@ fi
 ### Update system
 echo "Update the system"
 
-pacman -Syy -y && pacman -Syu -y
+pacman -Syy -y --noconfirm && pacman -Syu --noconfirm
 
 #### Install yay
 echo "Installation yay"
 
 # 1) install git and base-devel for yay
 	echo "install git and  base-devel"
-	pacman -S --needed git base-devel -y
+	pacman -S --needed git base-devel --noconfirm
 
 # 2) Clone repo and create folder yay
 	git clone https://aur.archlinux.org/yay.git
