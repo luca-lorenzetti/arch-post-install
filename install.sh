@@ -29,13 +29,15 @@ echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 ### Check if user is root
 
-if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
+#if [ "$EUID" -ne 0 ]
+#  then echo "Please run as root"
   
-  exit
-fi
+#  exit
+#fi
 
+CURRENTUSER=$LOGNAME
 
+su 
 ### Update system
 echo "Update the system"
 
@@ -49,7 +51,7 @@ echo "Installation yay"
 	pacman -S --needed git base-devel --noconfirm
 
 # 2) Clone repo and create folder yay
-	git clone https://aur.archlinux.org/yay.git /home/$LOGNAME/
+	git clone https://aur.archlinux.org/yay.git /home/$CURRENTUSER/
 	
 	# enter into yay folder and make
 	cd yay
@@ -68,14 +70,11 @@ cat packages.list | xargs yay -S --noconfirm
 
 ### Copy .conf folder
 
-cp -r .config /home/$LOGNAME/
+cp -r .config /home/$CURRENTUSER/
 
 ### Copi Immagini folder
 
-cp -r Immagini /home/$LOGNAME
-
-
-
+cp -r Immagini /home/$CURRENTUSER/
 
 
 
