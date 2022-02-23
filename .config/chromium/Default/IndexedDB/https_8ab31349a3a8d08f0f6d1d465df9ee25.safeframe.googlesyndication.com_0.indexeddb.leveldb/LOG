@@ -1,0 +1,6 @@
+2022/02/22-10:12:49.958 1abf Creating DB /home/luca/.config/chromium/Default/IndexedDB/https_8ab31349a3a8d08f0f6d1d465df9ee25.safeframe.googlesyndication.com_0.indexeddb.leveldb since it was missing.
+2022/02/22-10:12:49.962 1abf Reusing MANIFEST /home/luca/.config/chromium/Default/IndexedDB/https_8ab31349a3a8d08f0f6d1d465df9ee25.safeframe.googlesyndication.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/02/22-10:12:59.920 1abf Level-0 table #5: started
+2022/02/22-10:12:59.921 1abf Level-0 table #5: 460 bytes OK
+2022/02/22-10:12:59.923 1abf Delete type=0 #3
+2022/02/22-10:12:59.923 1abf Manual compaction at level-0 from (begin) .. (end); will stop at (end)

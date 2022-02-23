@@ -1,0 +1,20 @@
+00:00:00.462010 VirtualBox GUI VM Selector Window 6.1.32 r149290 linux.amd64 (Feb 10 2022 14:02:19) release log
+00:00:00.462012 Log opened 2022-02-22T11:13:31.239861000Z
+00:00:00.462012 Build Type: release
+00:00:00.462014 OS Product: Linux
+00:00:00.462014 OS Release: 5.16.10-arch1-1
+00:00:00.462015 OS Version: #1 SMP PREEMPT Wed, 16 Feb 2022 19:35:18 +0000
+00:00:00.462034 DMI Product Name: To be filled by O.E.M.
+00:00:00.462041 DMI Product Version: To be filled by O.E.M.
+00:00:00.462045 Firmware type: BIOS
+00:00:00.462071 Host RAM: 10918MB (10.6GB) total, 9032MB (8.8GB) available
+00:00:00.462073 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.462073 Process ID: 11282
+00:00:00.462074 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.462092 Qt version: 5.15.2
+00:00:00.488516 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:01.040567 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 0x0 x 1360x720
+00:00:01.055939 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:13:29.254238 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:27:22.105630 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:39:27.013927 GUI: UICommon::sltHandleCommitDataRequest: Emergency shutdown initiated

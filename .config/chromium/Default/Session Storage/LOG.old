@@ -1,0 +1,9 @@
+2022/02/22-20:38:59.667 3 Reusing MANIFEST /home/luca/.config/chromium/Default/Session Storage/MANIFEST-000001
+2022/02/22-20:38:59.669 3 Recovering log #45
+2022/02/22-20:38:59.673 3 Reusing old log /home/luca/.config/chromium/Default/Session Storage/000045.log 
+2022/02/22-20:57:36.486 3 Level-0 table #49: started
+2022/02/22-20:57:36.490 3 Level-0 table #49: 19108 bytes OK
+2022/02/22-20:57:36.493 3 Delete type=0 #45
+2022/02/22-22:05:15.183 1f Level-0 table #51: started
+2022/02/22-22:05:15.187 1f Level-0 table #51: 20446 bytes OK
+2022/02/22-22:05:15.190 1f Delete type=0 #48

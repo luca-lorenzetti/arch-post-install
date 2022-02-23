@@ -1,0 +1,7 @@
+2022/02/22-08:07:08.820 71b Reusing MANIFEST /home/luca/.config/chromium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/02/22-08:07:08.820 71b Recovering log #3
+2022/02/22-08:07:08.821 71b Reusing old log /home/luca/.config/chromium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000003.log 
+2022/02/22-12:42:50.193 2de9 Level-0 table #5: started
+2022/02/22-12:42:50.209 2de9 Level-0 table #5: 733005 bytes OK
+2022/02/22-12:42:50.210 2de9 Delete type=0 #3
+2022/02/22-12:42:50.211 2de9 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
