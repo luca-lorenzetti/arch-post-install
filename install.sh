@@ -53,7 +53,7 @@ echo "Installation yay"
 	
 	# enter into yay folder and make
 	cd yay
-	makepkg -si
+	-u nobody makepkg -si
 	
 ####  Install packages from packages.list (PACMAN)
 
@@ -72,7 +72,7 @@ cp -r .config /home/$USER/
 
 ### Copi Immagini folder
 
-cp -r Immagini /homr/$USER
+cp -r Immagini /home/$USER
 
 
 
