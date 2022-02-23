@@ -53,7 +53,7 @@ echo "Installation yay"
 	
 	# enter into yay folder and make
 	cd yay
-	-u nobody makepkg -si
+	sudo -u nobody makepkg -si
 	
 ####  Install packages from packages.list (PACMAN)
 
