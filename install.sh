@@ -49,7 +49,7 @@ echo "Installation yay"
 	pacman -S --needed git base-devel --noconfirm
 
 # 2) Clone repo and create folder yay
-	git clone https://aur.archlinux.org/yay.git /home/$USER/
+	git clone https://aur.archlinux.org/yay.git /home/$LOGNAME/
 	
 	# enter into yay folder and make
 	cd yay
@@ -68,11 +68,11 @@ cat packages.list | xargs yay -S --noconfirm
 
 ### Copy .conf folder
 
-cp -r .config /home/$USER/
+cp -r .config /home/$LOGNAME/
 
 ### Copi Immagini folder
 
-cp -r Immagini /home/$USER
+cp -r Immagini /home/$LOGNAME
 
 
 
