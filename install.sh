@@ -63,7 +63,12 @@ cat packages.list | xargs pacman -S --noconfirm
 
 #### Install packages from packagesaur.list (AUR)
 
-yay --save --answerclean All --answerdiff All
+while read line;
+do
+paru -S $line -y
+done < packagesaur.list
+
+
 
 cat packages.list | xargs yay -S --noconfirm
 
