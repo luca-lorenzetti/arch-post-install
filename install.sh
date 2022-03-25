@@ -42,19 +42,19 @@ echo "Update the system"
 
 pacman -Syy -y --noconfirm && pacman -Syu --noconfirm
 
-#### Install paru
-echo "Installation paru"
+#### Install yay
+echo "Installation yay"
 
-# 1) install git and base-devel for paru
+# 1) install git and base-devel for yay
 	echo "install git and  base-devel"
 	pacman -S --needed git base-devel --noconfirm
 
-# 2) Clone repo and create folder paru
-	git clone https://aur.archlinux.org/paru.git /home/$CURRENTUSER/
+# 2) Clone repo and create folder yay
+	git clone https://aur.archlinux.org/yay.git /home/$CURRENTUSER/
 	
-	# enter into paru folder and make
-	cd paru
-	makepkg -si
+	# enter into yay folder and make
+	cd yay
+	-u user makepkg -si
 	
 ####  Install packages from packages.list (PACMAN)
 
@@ -63,14 +63,10 @@ cat packages.list | xargs pacman -S --noconfirm
 
 #### Install packages from packagesaur.list (AUR)
 
-while read line;
-do
-paru -S $line -y
-done < packagesaur.list
+yay --save --answerclean All --answerdiff All
 
+cat packagesaur.list | xargs yay -S --noconfirm
 
-
-cat packages.list | xargs yay -S --noconfirm
 
 ### Copy .conf folder
 
