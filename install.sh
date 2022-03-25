@@ -34,8 +34,8 @@ if [ "$EUID" -ne 0 ]
   
   exit
 fi
+read -p "Enter fullname: " CURRENTUSER
 
-CURRENTUSER=$LOGNAME
  
 ### Update system
 echo "Update the system"
