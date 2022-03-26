@@ -53,7 +53,7 @@ echo "Installation yay"
 	git clone https://aur.archlinux.org/yay.git /home/$CURRENTUSER/yay
 	
 	# enter into yay folder and make
-	cd yay
+	cd /home/$CURRENTUSER/yay
 	-u user makepkg -si
 	
 ####  Install packages from packages.list (PACMAN)
