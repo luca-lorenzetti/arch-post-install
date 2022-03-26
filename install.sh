@@ -54,7 +54,7 @@ echo "Installation yay"
 	
 	# enter into yay folder and make
 	#cd /home/$CURRENTUSER/yay
-	/home/$CURRENTUSER/yay -u user makepkg -si
+	-u user makepkg -si /home/$CURRENTUSER/yay 
 	
 ####  Install packages from packages.list (PACMAN)
 
