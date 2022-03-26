@@ -72,11 +72,6 @@ cat packagesaur.list | xargs yay -S --noconfirm
 
 cp -r .config /home/$CURRENTUSER/
 
-### Copi Immagini folder
 
-cp -r Immagini /home/$CURRENTUSER/
-
-
-
-echo 'fine'
+echo 'The end'
 
