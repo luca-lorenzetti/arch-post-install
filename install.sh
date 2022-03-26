@@ -50,7 +50,7 @@ echo "Installation yay"
 	pacman -S --needed git base-devel --noconfirm
 
 # 2) Clone repo and create folder yay
-	git clone https://aur.archlinux.org/yay.git /home/$CURRENTUSER/
+	git clone https://aur.archlinux.org/yay.git /home/$CURRENTUSER/yay
 	
 	# enter into yay folder and make
 	cd yay
