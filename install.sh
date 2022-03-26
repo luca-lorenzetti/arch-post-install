@@ -73,5 +73,9 @@ cat packagesaur.list | xargs yay -S --noconfirm
 cp -r .config /home/$CURRENTUSER/
 
 
+## Start Plank Dock
+
+plank
+
 echo 'The end'
 
