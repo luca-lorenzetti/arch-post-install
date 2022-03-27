@@ -54,19 +54,19 @@ echo "Installation yay"
 	
 	# enter into yay folder and make
 	cd ../yay
-	echo "DIRECTORU ------> " $PWD
-	-u user makepkg -si
+	exit
+	makepkg -si
 	
 ####  Install packages from packages.list (PACMAN)
 cd ../arch-post-install
-cat packages.list | xargs pacman -S --noconfirm
+sudo cat packages.list | xargs pacman -S --noconfirm
 
 
 #### Install packages from packagesaur.list (AUR)
 
 yay --save --answerclean All --answerdiff All
 
-cat packagesaur.list | xargs yay -S --noconfirm
+sudo cat packagesaur.list | xargs yay -S --noconfirm
 
 
 ### Copy .conf folder
