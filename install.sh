@@ -57,7 +57,7 @@ echo "Installation yay"
 	-u user makepkg -si
 	
 ####  Install packages from packages.list (PACMAN)
-
+	cd ../arch-post-install
 cat packages.list | xargs pacman -S --noconfirm
 
 
