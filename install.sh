@@ -54,10 +54,11 @@ echo "Installation yay"
 	
 	# enter into yay folder and make
 	cd ../yay
+	echo "DIRECTORU ------> " $PWD
 	-u user makepkg -si
 	
 ####  Install packages from packages.list (PACMAN)
-	cd ../arch-post-install
+cd ../arch-post-install
 cat packages.list | xargs pacman -S --noconfirm
 
 
