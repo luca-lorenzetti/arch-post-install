@@ -53,9 +53,9 @@ echo "Installation yay"
 	git clone https://aur.archlinux.org/yay.git /home/$CURRENTUSER/yay
 	
 	# enter into yay folder and make
+	chmod -R 777 ../yay
 	cd ../yay
-	exit
-	makepkg -si
+	sudo -H -u $CURRENTUSER bash -c makepkg -si
 	
 ####  Install packages from packages.list (PACMAN)
 cd ../arch-post-install
