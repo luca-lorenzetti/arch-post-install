@@ -55,6 +55,8 @@ echo "Installation yay"
 	# enter into yay folder and make
 	chmod -R 777 ../yay
 	cd ../yay
+	
+	echo "EXECUTE MAKEPKG AS $CURRENTUSER"
 	sudo -H -u $CURRENTUSER bash -c makepkg -si
 	
 ####  Install packages from packages.list (PACMAN)
