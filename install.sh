@@ -59,6 +59,7 @@ echo "Installation yay"
 	echo "EXECUTE MAKEPKG AS $CURRENTUSER"
 	sudo -H -u $CURRENTUSER bash -c makepkg -si
 	
+	cp src/yay-11.1.2/yay /bin/
 ####  Install packages from packages.list (PACMAN)
 cd ../arch-post-install
 sudo cat packages.list | xargs pacman -S --noconfirm
