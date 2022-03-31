@@ -80,7 +80,7 @@ read configFolder
 
 if [ "$configFolder" = "y" ] || [ "$configFolder" = "Y" ]; then
 	
-	cp -r .config ~/
+	sudo cp -r .config ~/
 	
 	echo "Copy . folder done."
 else
