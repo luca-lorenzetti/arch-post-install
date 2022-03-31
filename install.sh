@@ -44,8 +44,8 @@ sudo pacman -Syy --noconfirm && sudo pacman -Syu --noconfirm
 echo "Installation yay"
 
 # 1) install git and base-devel for yay
-	echo "install git and  base-devel"
-	pacman -S --needed git base-devel --noconfirm
+	echo "install base-devel"
+	sudo pacman -S --needed base-devel --noconfirm
 
 # 2) Clone repo and create folder yay
 	cd ~/
