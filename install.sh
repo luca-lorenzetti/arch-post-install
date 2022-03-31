@@ -60,7 +60,7 @@ echo "Installation yay"
 	sudo rm -R ~/yay
 	
 ####  Install packages from packages.list (PACMAN)
-	cd arch-post-install
+	cd ~/arch-post-install
 	cat packages.list | xargs sudo pacman -S --noconfirm
 
 
@@ -78,7 +78,7 @@ echo "Do you want copy .config folder?Y/n"
 read configFolder
 
 
-if [ tolower($configFolder) = "y" ]; then
+if [ tolower($configFolder) == "y" ]; then
 	
 	cp -r .config ~/
 else
