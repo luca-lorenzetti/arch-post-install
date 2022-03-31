@@ -78,7 +78,7 @@ echo "Do you want copy .config folder?Y/n"
 read configFolder
 
 
-if [ tolower($configFolder) == "y" ]; then
+if [ tolower("$configFolder") = "y" ]; then
 	
 	cp -r .config ~/
 else
