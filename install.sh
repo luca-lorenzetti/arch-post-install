@@ -86,7 +86,6 @@ if [ "$configFolder" = "y" ] || [ "$configFolder" = "Y" ]; then
 else
   echo "Ok"
 fi
-cp 
 
 
 ## Start Plank Dock
