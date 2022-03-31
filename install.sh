@@ -66,7 +66,7 @@ echo "Installation yay"
 
 #### Install packages from packagesaur.list (AUR)
 
-yay --save --answerclean All --answerdiff All
+yay --save --answerclean All --answerdiff None
 
 #cat packagesaur.list | xargs yay -S --noconfirm
 while read package; do
