@@ -29,18 +29,16 @@ echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 ### Check if user is root
 
-if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
-  
-  exit
-fi
-read -p "Enter fullname: " CURRENTUSER
+#if [ "$EUID" -ne 0 ]
+#  then echo "Please run as root"
+#  
+#  exit
+#fi
 
- 
 ### Update system
 echo "Update the system"
 
-pacman -Syy -y --noconfirm && pacman -Syu --noconfirm
+sudo pacman -Syy --noconfirm && sudo pacman -Syu --noconfirm
 
 #### Install yay
 echo "Installation yay"
@@ -50,31 +48,43 @@ echo "Installation yay"
 	pacman -S --needed git base-devel --noconfirm
 
 # 2) Clone repo and create folder yay
-	git clone https://aur.archlinux.org/yay.git /home/$CURRENTUSER/yay
+	cd ~/
+	git clone https://aur.archlinux.org/yay.git
 	
 	# enter into yay folder and make
-	chmod -R 777 ../yay
-	cd ../yay
 	
-	echo "EXECUTE MAKEPKG AS $CURRENTUSER"
-	sudo -H -u $CURRENTUSER bash -c makepkg -si
+	cd yay
 	
-	cp src/yay-11.1.2/yay /bin/
+	makepkg -si --noconfirm
+
+	sudo rm -R ~/yay
+	
 ####  Install packages from packages.list (PACMAN)
-cd ../arch-post-install
-sudo cat packages.list | xargs pacman -S --noconfirm
+	cd arch-post-install
+	cat packages.list | xargs sudo pacman -S --noconfirm
 
 
 #### Install packages from packagesaur.list (AUR)
 
 yay --save --answerclean All --answerdiff All
 
-sudo cat packagesaur.list | xargs yay -S --noconfirm
+cat packagesaur.list | xargs yay -S --noconfirm
 
 
 ### Copy .conf folder
 
-cp -r .config /home/$CURRENTUSER/
+echo "Do you want copy .config folder?Y/n"
+
+read configFolder
+
+
+if [ tolower($configFolder) = "y" ]; then
+	
+	cp -r .config ~/
+else
+  echo "Ok"
+fi
+cp 
 
 
 ## Start Plank Dock
