@@ -1,8 +1,0 @@
-2022/02/22-10:02:30.101 1724 Reusing MANIFEST /home/luca/.config/skypeforlinux/Local Storage/leveldb/MANIFEST-000001
-2022/02/22-10:02:30.102 1724 Recovering log #8
-2022/02/22-10:02:30.104 1724 Level-0 table #10: started
-2022/02/22-10:02:30.110 1724 Level-0 table #10: 92656 bytes OK
-2022/02/22-10:02:30.110 1724 Recovering log #10
-2022/02/22-10:02:30.110 1724 Reusing old log /home/luca/.config/skypeforlinux/Local Storage/leveldb/000010.log 
-2022/02/22-10:02:30.113 1724 Delete type=0 #8
-2022/02/22-10:02:30.113 1724 Delete type=2 #11

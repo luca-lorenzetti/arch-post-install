@@ -1,6 +1,0 @@
-2022/02/22-09:50:35.196 10b2 Creating DB /home/luca/.config/chromium/Default/IndexedDB/https_linuxize.com_0.indexeddb.leveldb since it was missing.
-2022/02/22-09:50:35.202 10b2 Reusing MANIFEST /home/luca/.config/chromium/Default/IndexedDB/https_linuxize.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/02/22-09:51:10.568 10d2 Level-0 table #5: started
-2022/02/22-09:51:10.571 10d2 Level-0 table #5: 7102 bytes OK
-2022/02/22-09:51:10.573 10d2 Delete type=0 #3
-2022/02/22-09:51:10.573 10d2 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

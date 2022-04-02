@@ -1,6 +1,0 @@
-2022/02/23-08:22:58.725 3 Reusing MANIFEST /home/luca/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
-2022/02/23-08:22:58.729 3 Recovering log #162
-2022/02/23-08:22:58.733 3 Reusing old log /home/luca/.config/chromium/Default/Local Storage/leveldb/000162.log 
-2022/02/23-08:32:31.267 8 Level-0 table #166: started
-2022/02/23-08:32:31.271 8 Level-0 table #166: 19826 bytes OK
-2022/02/23-08:32:31.275 8 Delete type=0 #162
