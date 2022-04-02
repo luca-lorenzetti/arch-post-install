@@ -71,6 +71,11 @@ fi
 echo "Copy .bashrc"
 sudo cp -r .bashrc ~/
 
+
+## Clean
+
+sudo pacman -Rsn $(pacman -Qqdt)
+
 echo 'The end'
 
 
