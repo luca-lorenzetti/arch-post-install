@@ -74,7 +74,7 @@ sudo cp -r .bashrc ~/
 
 ## Clean
 
-sudo pacman -Rsn $(pacman -Qqdt)
+sudo pacman -Rsn $(pacman -Qqdt) --noconfirm
 
 echo 'The end'
 
