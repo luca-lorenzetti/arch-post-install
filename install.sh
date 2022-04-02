@@ -50,7 +50,7 @@ while read package; do
   yay -S $package --noconfirm
 done < packagesaur.list
 
-### Copy .conf folder
+### Copy .config folder
 
 echo "Do you want copy .config folder?Y/n"
 
@@ -63,9 +63,14 @@ if [ "$configFolder" = "y" ] || [ "$configFolder" = "Y" ]; then
 	
 	echo "Copy . folder done."
 else
-  echo "Ok"
+  	echo "Ok"
 fi
 
+### Copy .bashrc
+
+echo "Copy .bashrc"
+sudo cp -r .bashrc ~/
 
 echo 'The end'
+
 
