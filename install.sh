@@ -37,7 +37,7 @@ echo "Installation yay"
 	sudo rm -R ~/yay
 	
 ####  Install packages from packages.list (PACMAN)
-	cd ~/arch-post-install
+	cd ~/arch-xfce4-post-install
 	cat packages.list | xargs sudo pacman -S --noconfirm
 
 
