@@ -40,3 +40,6 @@ x264
 xfce4-datetime-plugin
 xfce4-whiskermenu-plugin
 xvidcore
+htop
+intel-ucode
+amd-ucode
