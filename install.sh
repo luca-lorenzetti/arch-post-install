@@ -45,10 +45,10 @@ echo "Installation yay"
 
 yay --save --answerclean All --answerdiff None
 
-#cat packagesaur.list | xargs yay -S --noconfirm
-while read package; do
-  yay -S $package --noconfirm
-done < packagesaur.list
+cat packagesaur.list | xargs yay -S --noconfirm
+#while read package; do
+# yay -S $package --noconfirm
+# done < packagesaur.list
 
 ### Copy .config folder
 
