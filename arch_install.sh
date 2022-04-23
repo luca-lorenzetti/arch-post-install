@@ -44,6 +44,9 @@ echo arch-test > /etc/hostname
 
 echo "root:root" | chpasswd -e
 
-pacman -S grub efibootmgr
+pacman -S grub
 
+grub-install /dev/sda
+
+grub-mkconfig -o /boot/grub/grub.cfg
 
