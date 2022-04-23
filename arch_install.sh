@@ -44,7 +44,7 @@ echo arch-test > /etc/hostname
 
 echo "root:root" | chpasswd -e
 
-pacman -S grub
+pacman -S grub --noconfirm
 
 grub-install /dev/sda
 
