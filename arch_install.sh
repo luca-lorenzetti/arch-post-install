@@ -8,7 +8,7 @@ pacman -S parted --noconfirm
 
 
 # delete partition
-for i in 10
+for i in {1..10}
 do
 	parted -s /dev/sda rm $i
 done
