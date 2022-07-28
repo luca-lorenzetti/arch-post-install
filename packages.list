@@ -1,6 +1,8 @@
 a52dec
-amberol
 amd-ucode
+blueman
+bluez
+bluez-utils
 catfish
 chromium
 exfat-utils
@@ -8,6 +10,7 @@ faac
 faad2
 flac
 fuse-exfat
+gnome-keyring
 gparted
 gst-libav
 gstreamer
@@ -31,6 +34,7 @@ linux-lts-headers
 neofetch
 network-manager-applet
 p7zip
+pavucontrol
 plank
 qbittorrent
 rsync
@@ -38,7 +42,6 @@ tar
 ttf-droid
 unrar
 virtualbox
-visual-studio-code-bin
 vlc
 wavpack
 x264
