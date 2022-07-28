@@ -1,4 +1,6 @@
 a52dec
+amberol
+amd-ucode
 catfish
 chromium
 exfat-utils
@@ -9,6 +11,8 @@ fuse-exfat
 gparted
 gst-libav
 gstreamer
+htop
+intel-ucode
 jasper
 jdk8-openjdk
 lame
@@ -34,12 +38,10 @@ tar
 ttf-droid
 unrar
 virtualbox
+visual-studio-code-bin
 vlc
 wavpack
 x264
 xfce4-datetime-plugin
 xfce4-whiskermenu-plugin
 xvidcore
-htop
-intel-ucode
-amd-ucode
