@@ -50,8 +50,11 @@ cat packagesaur.list | xargs yay -S --noconfirm
 # yay -S $package --noconfirm
 # done < packagesaur.list
 
-### Copy .config folder
+echo "Enable the systemd service for lightdm"
+systemctl enable lightdm
 
+
+### Copy .config folder
 echo "Do you want copy .config folder?Y/n"
 
 read configFolder
@@ -61,13 +64,12 @@ if [ "$configFolder" = "y" ] || [ "$configFolder" = "Y" ]; then
 	
 	sudo cp -r .config ~/
 	
-	echo "Copy . folder done."
+	echo "Copy .folder done."
 else
   	echo "Ok"
 fi
 
 ### Copy .bashrc
-
 echo "Copy .bashrc"
 sudo cp -r .bashrc ~/
 
