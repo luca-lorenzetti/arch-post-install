@@ -1,13 +1,12 @@
 #! /usr/bin/env bash
 
 while IFS= read -r line; do
-    echo "Text read from file: $line"
-	if [[ $line == *"version"* ]]; then
-  		version = $line;
-	fi
 
-	if [[ $line == *"name"* ]]; then
-  		name = $line;
+	if [[ $line == *"version"* ]]; then
+  		version=$line;
+
+	elif [[ $line == *"name"* ]]; then
+  		name=$line;
 	fi
 done < version.txt
 
@@ -62,7 +61,7 @@ cat packagesaur.list | xargs yay -S --noconfirm
 # done < packagesaur.list
 
 echo "Enable the systemd service for lightdm"
-systemctl enable lightdm
+sudo systemctl enable lightdm
 
 ### Copy .config folder
 echo "Do you want copy .config folder?Y/n"
